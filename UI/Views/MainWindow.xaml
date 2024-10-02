@@ -1,0 +1,51 @@
+﻿<Window xmlns:Views="clr-namespace:UI.Views"  x:Class="UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Convertor="clr-namespace:UI.Convertor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="400">
+
+    <Window.Resources>
+        <Convertor:ControlVisibility x:Key="my:ControlVisibility">
+        </Convertor:ControlVisibility>
+    </Window.Resources>
+    <Grid  >
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="305"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel  HorizontalAlignment="Center" Orientation="Horizontal"  >
+            <Button Margin="10" Command="{Binding SetControlVisibility}" CommandParameter="Customers">
+                <Image Source="E:\vs\kpz_2\UI\Icon\Buttons\customer.png" Height="70" Width="70">
+
+                </Image>
+            </Button>
+            <Button Margin="10" Command="{Binding SetControlVisibility}" CommandParameter="JewelryList">
+                <Image Source="E:\vs\kpz_2\UI\Icon\Buttons\jewelry.png" Height="70" Width="70"></Image>
+            </Button>
+            <Button  Margin="10" Command="{Binding SetControlVisibility}" CommandParameter="Orders">
+                <Image Source="E:\vs\kpz_2\UI\Icon\Buttons\order.png" Height="70" Width="80"></Image>
+            </Button>
+        </StackPanel>
+
+
+
+        <StackPanel Grid.Row="1" Margin="5,5,5,5" Grid.RowSpan="2" >
+            <Views:OrdersUserControl1 Visibility="{Binding VisibleControl, Converter={StaticResource my:ControlVisibility}, ConverterParameter=Orders}" />
+            <Views:CustomersUserControl1 Visibility="{Binding VisibleControl, Converter={StaticResource my:ControlVisibility}, ConverterParameter=Customers}"/>
+            <Views:JewelryUserControl1  Visibility="{Binding VisibleControl, Converter={StaticResource my:ControlVisibility}, ConverterParameter=JewelryList}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="3" HorizontalAlignment="Center">
+            <Button Content="Delete" Command="{Binding Delete}"  Height="50" Width="70" />
+
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,12 @@
+E:\vs\kpz_2\kpz_2\bin\Debug\net5.0-windows\kpz_2.deps.json
+E:\vs\kpz_2\kpz_2\bin\Debug\net5.0-windows\kpz_2.dll
+E:\vs\kpz_2\kpz_2\bin\Debug\net5.0-windows\kpz_2.pdb
+E:\vs\kpz_2\kpz_2\obj\Debug\net5.0-windows\kpz_2.csproj.AssemblyReference.cache
+E:\vs\kpz_2\kpz_2\obj\Debug\net5.0-windows\kpz_2.GeneratedMSBuildEditorConfig.editorconfig
+E:\vs\kpz_2\kpz_2\obj\Debug\net5.0-windows\kpz_2.AssemblyInfoInputs.cache
+E:\vs\kpz_2\kpz_2\obj\Debug\net5.0-windows\kpz_2.AssemblyInfo.cs
+E:\vs\kpz_2\kpz_2\obj\Debug\net5.0-windows\kpz_2.csproj.CoreCompileInputs.cache
+E:\vs\kpz_2\kpz_2\obj\Debug\net5.0-windows\kpz_2.dll
+E:\vs\kpz_2\kpz_2\obj\Debug\net5.0-windows\ref\kpz_2.dll
+E:\vs\kpz_2\kpz_2\obj\Debug\net5.0-windows\kpz_2.pdb
+E:\vs\kpz_2\kpz_2\obj\Debug\net5.0-windows\refint\kpz_2.dll
